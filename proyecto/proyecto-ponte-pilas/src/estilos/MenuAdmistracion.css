@@ -1,0 +1,179 @@
+.menu-admin-fondo {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(180deg, #e3f0ff 0%, #ffffff 100%);
+  position: relative;
+  font-family: 'Montserrat', Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.menu-admin-fondo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("../recursos/MenuAdm/LogFondo.png") center center no-repeat;
+  background-size: 70% auto;
+  opacity: 0.13;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.menu-admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 32px 10px 32px;
+  background: linear-gradient(90deg, #fff 60%, #b3e0ff 100%);
+  border-bottom: 4px solid #000;
+  position: relative;
+  z-index: 2;
+}
+
+.menu-admin-logo {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.logo-quito {
+  height: 60px;
+}
+
+.ponte-once {
+  background: #d6f6ff;
+  border-radius: 10px;
+  padding: 8px 18px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 6px #0002;
+}
+
+.ponte {
+  color: #0077c8;
+}
+
+.once {
+  color: #ff1a1a;
+  font-style: italic;
+}
+
+.menu-admin-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+.icono-engranaje {
+  font-size: 1.5rem;
+}
+
+.nombre-usuario {
+  font-weight: 500;
+}
+
+.icono-desplegar {
+  font-size: 1.2rem;
+}
+
+.menu-admin-main {
+  max-width: 1200px;
+  min-height: 70vh;
+  margin: 40px auto 0 auto;
+  background: #ffffffbb;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #0001;
+  padding: 32px 24px 48px 24px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-admin-titulo {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 36px;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.menu-admin-opciones {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  gap: 32px;
+  height: 100%;
+}
+
+.opcion-admin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+  min-width: 240px;
+}
+
+.btn-opcion {
+  margin-bottom: 10px;
+  padding: 10px 18px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #ff4e50 0%, #8f2fff 100%);
+  color: #fff;
+  box-shadow: 0 2px 8px #0002;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.btn-opcion:hover {
+  transform: scale(1.05);
+}
+
+.img-opcion {
+  width: 240px;
+  height: 240px;
+  max-width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  margin-top: 8px;
+  transition: transform 0.2s;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .menu-admin-main {
+    max-width: 98vw;
+    padding: 18px 4vw 32px 4vw;
+  }
+  .img-opcion {
+    width: 180px;
+    height: 180px;
+  }
+  .opcion-admin {
+    min-width: 180px;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu-admin-opciones {
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+  .opcion-admin {
+    width: 100%;
+    min-width: 140px;
+  }
+  .img-opcion {
+    width: 140px;
+    height: 140px;
+  }
+}
